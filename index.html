@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>North Coffee | Old Money Elegance</title>
+  <!-- Tailwind CSS CDN + Font Awesome -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Playfair Display + Montserrat untuk old money elegant -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .font-serif-elegant {
+      font-family: 'Playfair Display', serif;
+    }
+    body {
+      background: linear-gradient(135deg, #f5f7fa 0%, #eef2f5 100%);
+    }
+    /* old money color palette: navy, cream, gold, charcoal */
+    .old-money-card {
+      transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    }
+    .old-money-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.25), 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+    .fade-up {
+      animation: fadeUp 0.7s ease forwards;
+      opacity: 0;
+    }
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .delay-100 { animation-delay: 0.1s; }
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-300 { animation-delay: 0.3s; }
+    .delay-400 { animation-delay: 0.4s; }
+    .delay-500 { animation-delay: 0.5s; }
+    .hover-gold {
+      transition: all 0.3s ease;
+    }
+    .hover-gold:hover {
+      color: #c9a03d;
+      border-color: #c9a03d;
+    }
+    .gold-border {
+      border-image: none;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scroll::-webkit-scrollbar-track {
+      background: #e2e8f0;
+      border-radius: 10px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: #b8922e;
+      border-radius: 10px;
+    }
+    /* image placeholder styling - elegant fallback */
+    .menu-img {
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.6s ease;
+    }
+    .group:hover .menu-img {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="antialiased custom-scroll">
+
+  <div class="max-w-7xl mx-auto px-5 md:px-8 py-8 md:py-12">
+    
+    <!-- Header Elegant Old Money -->
+    <div class="text-center mb-12 md:mb-16 fade-up">
+      <div class="inline-block border-b-2 border-amber-700/40 pb-2 mb-4">
+        <span class="text-xs tracking-[0.3em] text-stone-500 font-semibold uppercase">EST. 2024</span>
+      </div>
+      <h1 class="font-serif-elegant text-5xl md:text-7xl font-bold text-stone-800 tracking-tight">North Coffee</h1>
+      <div class="w-24 h-0.5 bg-amber-600/50 mx-auto my-5"></div>
+      <p class="text-stone-500 max-w-2xl mx-auto text-sm md:text-base leading-relaxed font-light">Artisan Coffee & Heritage — Elegance in Every Cup</p>
+    </div>
+
+    <!-- Main Card: Form Data UMKM (clean white, premium look) -->
+    <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl border border-stone-100 overflow-hidden fade-up delay-100 mb-12">
+      <div class="bg-gradient-to-r from-stone-900 to-stone-800 px-7 py-5">
+        <div class="flex flex-wrap justify-between items-center gap-3">
+          <div>
+            <h2 class="font-serif-elegant text-2xl text-amber-100 tracking-wide">Profil Resmi UMKM</h2>
+            <p class="text-stone-300 text-sm mt-1">Informasi lengkap & terverifikasi</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur px-4 py-1.5 rounded-full">
+            <span class="text-amber-300 text-xs font-medium">✦ Premium Membership ✦</span>
+          </div>
+        </div>
+      </div>
+      <div class="p-6 md:p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-7 gap-y-5">
+          <div class="border-b border-stone-100 pb-2 fade-up delay-100">
+            <label class="block text-stone-400 text-[11px] font-semibold uppercase tracking-wider">Nama UMKM</label>
+            <p class="text-stone-800 text-base font-medium mt-1">north coffee</p>
+          </div>
+          <div class="border-b border-stone-100 pb-2 fade-up delay-150">
+            <label class="block text-stone-400 text-[11px] font-semibold uppercase tracking-wider">Nama Pemilik</label>
+            <p class="text-stone-800 text-base font-medium mt-1">sabiyan kohar</p>
+          </div>
+          <div class="md:col-span-2 border-b border-stone-100 pb-2 fade-up delay-200">
+            <label class="block text-stone-400 text-[11px] font-semibold uppercase tracking-wider">Alamat Lengkap</label>
+            <p class="text-stone-800 text-base mt-1">Jalan Panaitan, Kebon Pisang, Kota Bandung, Jawa Barat</p>
+          </div>
+          <div class="fade-up delay-250">
+            <label class="block text-stone-400 text-[11px] font-semibold uppercase tracking-wider">No. HP / WhatsApp</label>
+            <p class="text-stone-800 font-medium mt-1">088294279275</p>
+          </div>
+          <div class="fade-up delay-300">
+            <label class="block text-stone-400 text-[11px] font-semibold uppercase tracking-wider">Kategori Usaha</label>
+            <p class="text-stone-800 font-medium mt-1 capitalize">coffee shop · premium coffee</p>
+          </div>
+          <div class="fade-up delay-350">
+            <label class="block text-stone-400 text-[11px] font-semibold uppercase tracking-wider">Jam Operasional</label>
+            <p class="text-stone-800 font-medium mt-1">🕰️ 09:00 - 22:00 WIB</p>
+          </div>
+          <div class="md:col-span-2 fade-up delay-400">
+            <label class="block text-stone-400 text-[11px] font-semibold uppercase tracking-wider">Deskripsi Usaha</label>
+            <p class="text-stone-700 text-sm bg-stone-50 p-3 rounded-lg mt-1 leading-relaxed">usaha coffee yang berada di jalan Panjaitan, menghadirkan cita rasa autentik Nusantara dengan sentuhan old world charm. Tempat yang memadukan tradisi dan modernitas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Daftar Produk: semua menu sesuai permintaan dengan gambar kopi elegan -->
+    <div class="fade-up delay-200">
+      <div class="flex flex-col md:flex-row justify-between items-end border-b border-amber-800/20 pb-4 mb-8">
+        <div>
+          <span class="text-amber-700 text-sm font-semibold tracking-widest">✦ OUR SIGNATURE BLENDS ✦</span>
+          <h3 class="font-serif-elegant text-4xl md:text-5xl text-stone-800 mt-1">Menu Koleksi</h3>
+          <p class="text-stone-500 text-sm mt-2">Specialty coffee dari mulai 25k - 35k</p>
+        </div>
+        <div class="mt-3 md:mt-0">
+          <div class="bg-stone-100 px-5 py-2 rounded-full text-stone-600 text-sm font-medium shadow-inner">
+            Harga mulai Rp 25.000 — Rp 35.000
+          </div>
+        </div>
+      </div>
+      
+      <!-- Grid menu dengan foto : all 8 item -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7">
+        
+        <!-- 1. north coffee gula aren -->
+        <div class="group bg-white rounded-xl overflow-hidden shadow-md old-money-card border border-stone-200/80">
+          <div class="relative h-56 overflow-hidden bg-stone-200">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=500&auto=format" alt="Coffee Gula Aren" class="menu-img w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+            <div class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-0.5 rounded text-xs font-semibold text-amber-800">#BaristaChoice</div>
+          </div>
+          <div class="p-5">
+            <h4 class="font-serif-elegant text-xl font-bold text-stone-800">North Coffee Gula Aren</h4>
+            <div class="flex justify-between items-baseline mt-2">
+              <span class="text-amber-700 font-semibold">Rp 28.000</span>
+              <span class="text-xs text-stone-400">Signature</span>
+            </div>
+            <p class="text-stone-500 text-xs mt-3 leading-relaxed">Kopi aren asli dengan gula aren murni, sentuhan karamel dan aroma smoky — elegan dan otentik.</p>
+          </div>
+        </div>
+        
+        <!-- 2. north coffee matcha -->
+        <div class="group bg-white rounded-xl overflow-hidden shadow-md old-money-card border border-stone-200/80">
+          <div class="relative h-56 overflow-hidden bg-stone-200">
+            <img src="https://images.unsplash.com/photo-1605020989377-1a0e94d4bfb7?w=500&auto=format" alt="Matcha Latte" class="menu-img w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+          </div>
+          <div class="p-5">
+            <h4 class="font-serif-elegant text-xl font-bold text-stone-800">North Coffee Matcha</h4>
+            <div class="flex justify-between items-baseline mt-2">
+              <span class="text-amber-700 font-semibold">Rp 32.000</span>
+              <span class="text-xs text-stone-400">Ceremonial</span>
+            </div>
+            <p class="text-stone-500 text-xs mt-3">Matcha premium Jepang dipadu dengan steamed milk, rasa creamy dengan earthy note yang halus.</p>
+          </div>
+        </div>
+        
+        <!-- 3. north coffee original -->
+        <div class="group bg-white rounded-xl overflow-hidden shadow-md old-money-card border border-stone-200/80">
+          <div class="relative h-56 overflow-hidden bg-stone-200">
+            <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=500&auto=format" alt="Original Black Coffee" class="menu-img w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          </div>
+          <div class="p-5">
+            <h4 class="font-serif-elegant text-xl font-bold text-stone-800">North Coffee Original</h4>
+            <div class="flex justify-between items-baseline mt-2">
+              <span class="text-amber-700 font-semibold">Rp 25.000</span>
+              <span class="text-xs text-stone-400">Pure Black</span>
+            </div>
+            <p class="text-stone-500 text-xs mt-3">Single origin arabika dengan metode slow drip, body medium dan after taste coklat gelap.</p>
+          </div>
+        </div>
+        
+        <!-- 4. north coffee Nusantara -->
+        <div class="group bg-white rounded-xl overflow-hidden shadow-md old-money-card border border-stone-200/80">
+          <div class="relative h-56 overflow-hidden bg-stone-200">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500&auto=format" alt="Nusantara Blend" class="menu-img w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          </div>
+          <div class="p-5">
+            <h4 class="font-serif-elegant text-xl font-bold text-stone-800">North Coffee Nusantara</h4>
+            <div class="flex justify-between items-baseline mt-2">
+              <span class="text-amber-700 font-semibold">Rp 30.000</span>
+              <span class="text-xs text-stone-400">Heritage</span>
+            </div>
+            <p class="text-stone-500 text-xs mt-3">Perpaduan biji kopi dari Aceh, Toraja, dan Bali, menghasilkan rasa rempah & earthy yang khas.</p>
+          </div>
+        </div>
+        
+        <!-- 5. north puisi coffee -->
+        <div class="group bg-white rounded-xl overflow-hidden shadow-md old-money-card border border-stone-200/80">
+          <div class="relative h-56 overflow-hidden bg-stone-200">
+            <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?w=500&auto=format" alt="Puisi Coffee" class="menu-img w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          </div>
+          <div class="p-5">
+            <h4 class="font-serif-elegant text-xl font-bold text-stone-800">North Puisi Coffee</h4>
+            <div class="flex justify-between items-baseline mt-2">
+              <span class="text-amber-700 font-semibold">Rp 33.000</span>
+              <span class="text-xs text-stone-400">Artistic</span>
+            </div>
+            <p class="text-stone-500 text-xs mt-3" >Layered espresso, vanilla bean, dan lavender infusion — seperti puisi dalam setiap tegukan.</p>
+          </div>
+        </div>
+        
+        <!-- 6. north coffee senada -->
+        <div class="group bg-white rounded-xl overflow-hidden shadow-md old-money-card border border-stone-200/80">
+          <div class="relative h-56 overflow-hidden bg-stone-200">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=500&auto=format" alt="Senada Coffee" class="menu-img w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          </div>
+          <div class="p-5">
+            <h4 class="font-serif-elegant text-xl font-bold text-stone-800">North Coffee Senada</h4>
+            <div class="flex justify-between items-baseline mt-2">
+              <span class="text-amber-700 font-semibold">Rp 27.000</span>
+              <span class="text-xs text-stone-400">Harmony</span>
+            </div>
+            <p class="text-stone-500 text-xs mt-3">Perpaduan hazelnut, sedikit kayu manis, dengan foam lembut, harmoni rasa yang seimbang.</p>
+          </div>
+        </div>
+        
+        <!-- 7. north coffee maskulin -->
+        <div class="group bg-white rounded-xl overflow-hidden shadow-md old-money-card border border-stone-200/80">
+          <div class="relative h-56 overflow-hidden bg-stone-200">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=500&auto=format" alt="Maskulin Bold" class="menu-img w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          </div>
+          <div class="p-5">
+            <h4 class="font-serif-elegant text-xl font-bold text-stone-800">North Coffee Maskulin</h4>
+            <div class="flex justify-between items-baseline mt-2">
+              <span class="text-amber-700 font-semibold">Rp 35.000</span>
+              <span class="text-xs text-stone-400">Bold Espresso</span>
+            </div>
+            <p class="text-stone-500 text-xs mt-3">Double shot espresso dengan sentuhan dark chocolate & smoky aftertaste — untuk jiwa yang kuat.</p>
+          </div>
+        </div>
+        
+        <!-- 8. north coffee home -->
+        <div class="group bg-white rounded-xl overflow-hidden shadow-md old-money-card border border-stone-200/80">
+          <div class="relative h-56 overflow-hidden bg-stone-200">
+            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=500&auto=format" alt="Home Comfort" class="menu-img w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          </div>
+          <div class="p-5">
+            <h4 class="font-serif-elegant text-xl font-bold text-stone-800">North Coffee Home</h4>
+            <div class="flex justify-between items-baseline mt-2">
+              <span class="text-amber-700 font-semibold">Rp 29.000</span>
+              <span class="text-xs text-stone-400">Comfort Brew</span>
+            </div>
+            <p class="text-stone-500 text-xs mt-3">Kopi susu classic dengan sentuhan gula batu, rasa nostalgia seperti secangkir di rumah.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Informasi harga dan produk tambahan -->
+      <div class="mt-10 bg-white/60 backdrop-blur-sm rounded-2xl p-5 border border-stone-200/70 flex flex-wrap justify-between items-center gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center">
+            <span class="text-amber-700 text-lg">☕</span>
+          </div>
+          <div>
+            <p class="text-xs text-stone-500 uppercase tracking-wide">Rentang harga</p>
+            <p class="font-serif-elegant text-stone-800 font-semibold">Startup 25k — 35k (semua varian)</p>
+          </div>
+        </div>
+        <div class="text-right">
+          <p class="text-xs text-stone-400">*Setiap pembelian disertai stiker edisi terbatas</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bagian Fotografi & Old Money Vibe (tambahan untuk menambah kesan elegan) -->
+    <div class="mt-16 grid md:grid-cols-2 gap-8 fade-up delay-400">
+      <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-stone-100">
+        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=800&auto=format" alt="Coffee Atmosphere" class="w-full h-64 object-cover hover:scale-105 transition duration-700">
+        <div class="p-6">
+          <p class="font-serif-elegant text-2xl text-stone-800 italic">“Respect the bean, honor the tradition.”</p>
+          <p class="text-stone-500 text-sm mt-2">North Coffee — menanamkan filosofi klasik dalam setiap olahan biji pilihan.</p>
+        </div>
+      </div>
+      <div class="bg-stone-800 rounded-2xl shadow-xl overflow-hidden text-white p-6 flex flex-col justify-center items-center text-center">
+        <span class="text-amber-400 text-5xl mb-3">⏤</span>
+        <p class="font-serif-elegant text-2xl md:text-3xl font-light leading-tight">Setiap cangkir adalah warisan rasa</p>
+        <div class="w-16 h-px bg-amber-500/40 my-4"></div>
+        <p class="text-stone-300 text-sm max-w-sm">Kunjungi kedai kami di Jalan Panaitan, Bandung. Suasana klasik, musik jazz, dan pelayanan eksklusif.</p>
+        <a href="https://wa.me/6288294279275?text=Halo%20North%20Coffee%2C%20saya%20ingin%20memesan%20menu%20koleksi" target="_blank" class="mt-6 inline-flex items-center gap-2 border border-amber-600 hover:bg-amber-700 hover:border-amber-700 text-amber-300 hover:text-white px-6 py-2 rounded-full transition-all duration-300 text-sm font-medium">
+          Order via WhatsApp
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Footer old money sederhana -->
+    <div class="mt-12 pt-8 border-t border-stone-300/30 text-center fade-up delay-500">
+      <div class="flex flex-wrap justify-center gap-6 text-sm text-stone-500 mb-4">
+        <span>Jalan Panaitan, Kebon Pisang, Bandung</span>
+        <span>✧</span>
+        <span>WA: 0882-9427-9275</span>
+        <span>✧</span>
+        <span>09:00 - 22:00 WIB</span>
+      </div>
+      <p class="text-xs text-stone-400 tracking-wide">© 2025 NORTH COFFEE — Old Money Elegance & Artisan Spirit</p>
+      <div class="mt-3 flex justify-center gap-2">
+        <div class="w-1.5 h-1.5 rounded-full bg-amber-600/40"></div>
+        <div class="w-1.5 h-1.5 rounded-full bg-amber-600/40"></div>
+        <div class="w-1.5 h-1.5 rounded-full bg-amber-600/60"></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Efek animasi saat scroll (opsional) -->
+  <script>
+    // hanya untuk memastikan fade-up bekerja ketika halaman dimuat (sudah diberi kelas fade-up pada elemen)
+    document.addEventListener('DOMContentLoaded', () => {
+      const faders = document.querySelectorAll('.fade-up');
+      const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -20px 0px" };
+      const appearOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          observer.unobserve(entry.target);
+        });
+      }, appearOptions);
+      faders.forEach(fader => {
+        fader.style.opacity = '0';
+        fader.style.transform = 'translateY(25px
+          appearOnScroll.observe(fader);
+      });
+    });
+  </script>
+</body>
+</html>
